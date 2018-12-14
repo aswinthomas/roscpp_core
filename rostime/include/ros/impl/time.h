@@ -89,6 +89,8 @@ namespace ros
   template<class T, class D>
   T TimeBase<T, D>::operator+(const D &rhs) const
   {
+    ROS_INFO("This sec: %d, next sec: %d",(int64_t)sec,(int64_t)rhs.sec);
+    ROS_INFO("This nsec: %d, next nsec: %d",(int64_t)nsec,(int64_t)rhs.nsec);
     int64_t sec_sum  = (int64_t)sec  + (int64_t)rhs.sec;
     int64_t nsec_sum = (int64_t)nsec + (int64_t)rhs.nsec;
 
