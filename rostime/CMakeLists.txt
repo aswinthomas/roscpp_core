@@ -6,7 +6,7 @@ find_package(Boost REQUIRED COMPONENTS date_time system thread)
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES ${PROJECT_NAME}
-  CATKIN_DEPENDS cpp_common
+  CATKIN_DEPENDS cpp_common backward_ros
   DEPENDS Boost
 )
 
